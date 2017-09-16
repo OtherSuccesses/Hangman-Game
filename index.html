@@ -25,10 +25,22 @@
 		</div>
 		<div id = "Lives">
 		</div>
+		<div id = "Wins">
+		</div>
+		<div id = "Losses">
+		</div>				
 		<div id = "Result">
 		</div>
+		<button type="button" onclick="reset()">Reset Scrum!</button>
 			<script src="assets/javascript/game.js"></script>
 		<script>
+			function reset(){
+				chooseWord();
+				displayWord();
+				guesses = [];
+				lives = 10;
+				document.getElementById("Word").innerHTML = emptySpace;
+			}
 			chooseWord();
 			displayWord();
 		</script>

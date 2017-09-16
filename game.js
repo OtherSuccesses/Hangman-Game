@@ -3,7 +3,8 @@ var word = "";
 var letterGuess;
 var guesses = [];
 var lives = 10;
-var spaces;
+var wins = 0;
+var losses = 0;
 var wordOptions = ["scrum", "ruck", "lock", "flanker", "winger", "touch", "hooker", "prop", "lineout", "crouch", "bind", "set", "scrum half", "center", "box kick", "penalty", "try", "maul", "pitch", "knock on", "charge", "fly half", "fullback"];
 var wordDisplay = [];
 var emptySpace = "";
@@ -58,16 +59,20 @@ document.onkeyup = function(event) {
 
 	if (emptySpace.includes("_")===false){
 		document.getElementById("Result").innerHTML = "<p>You are the Victor</p>";
+		wins++;
 	}
 
 	else if (lives<=0){
 		document.getElementById("Result").innerHTML = "<p>You have lost and brought shame to your nation...</p>";
+		losses--;
 	}
 
 	rightGuess=false;
 
 	document.getElementById("Word").innerHTML = emptySpace;
-	document.getElementById("Wrong-guesses").innerHTML = "<p>Guesses: </p>" + guesses;
-	document.getElementById("Lives").innerHTML = "<p>Lives: </p>" + lives;
-
+	document.getElementById("Wrong-guesses").innerHTML = "Letters Guessed: " + guesses;
+	document.getElementById("Lives").innerHTML = "Wrong Guesses: " + lives;
+	document.getElementById("Wins").innerHTML = wins;
+	document.getElementById("Losses").innerHTML = losses;
 }
+
