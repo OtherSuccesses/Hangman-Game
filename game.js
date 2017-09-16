@@ -67,7 +67,7 @@ document.onkeyup = function(event) {
 	rightGuess=false;
 
 	document.getElementById("Word").innerHTML = emptySpace;
-	document.getElementById("Wrong-guesses").innerHTML = guesses;
-	document.getElementById("Lives").innerHTML = lives;
+	document.getElementById("Wrong-guesses").innerHTML = "<p>Guesses: </p>" + guesses;
+	document.getElementById("Lives").innerHTML = "<p>Lives: </p>" + lives;
 
 }

@@ -1,0 +1,44 @@
+body{
+	background-color: white;
+	background: url("../images/rugby-2522306_1280.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	} 
+
+h1{
+	font-family: 'Coda Caption', sans-serif;
+	margin:auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom:10px;
+	width:50%;
+	float:center;
+	background-color:#2D4739;
+	color:#E5C687;
+}
+
+#Instructions{
+	margin-top:50px;
+	float:left;
+	width:260px;
+	padding:10px;
+	padding-left:22px;
+	padding-right:22px;
+	margin-left:40px;
+	text-align:justify;
+	background-color:#09814A;
+	color:#BCB382;
+}
+
+#Word{
+	font-size:25px;
+	font-weight: bold;
+}
+
+#Game-area{
+	width:320px;
+	height:400px;
+	float:right;
+	position:relative;
+	background-color:#09814A;
+}
